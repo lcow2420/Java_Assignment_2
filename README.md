@@ -4,6 +4,7 @@ This is a Java-based project that simulates a simple blog post management system
 
 ## Project Overview
 
+
 The project consists of two main classes:
 
 - **Person**: Represents a person with attributes like `id`, `firstName`, `lastName`, `age`, and `gender`.
