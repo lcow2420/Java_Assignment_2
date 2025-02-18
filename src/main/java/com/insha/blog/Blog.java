@@ -3,7 +3,6 @@ package com.insha.blog;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
-
 import java.util.List;
 
 @Getter
