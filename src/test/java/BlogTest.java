@@ -16,6 +16,7 @@ class BlogTest {
         BlogPost post1 = new BlogPost("101", "1", "First post");
         BlogPost post2 = new BlogPost("102", "2", "Second post");
         BlogPost post3 = new BlogPost("103", "1", "Another post by Alice");
+        
 
         Blog blog = new Blog(List.of(author1, author2), List.of(post1, post2, post3));
 
