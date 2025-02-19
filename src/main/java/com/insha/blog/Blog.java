@@ -4,6 +4,7 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
+
 public class Blog {
     private final List<Person> authors;
     private final List<BlogPost> posts;
