@@ -1,5 +1,4 @@
 package com.insha.blog;
-
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
