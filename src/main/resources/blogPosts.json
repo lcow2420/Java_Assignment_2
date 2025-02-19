@@ -1,0 +1,53 @@
+[
+  {
+    "id": "101",
+    "authorId": "1",
+    "postContent": "First post by Insha"
+  },
+  
+  {
+    "id": "102",
+    "authorId": "2",
+    "postContent": "Bob's tech insights"
+  },
+  {
+    "id": "103",
+    "authorId": "1",
+    "postContent": "Another article from Insha"
+  },
+  {
+    "id": "104",
+    "authorId": "3",
+    "postContent": "Charlie's business guide"
+  },
+  {
+    "id": "105",
+    "authorId": "4",
+    "postContent": "Diana's fitness journey"
+  },
+  {
+    "id": "106",
+    "authorId": "2",
+    "postContent": "Bob's latest travel blog"
+  },
+  {
+    "id": "107",
+    "authorId": "5",
+    "postContent": "Evan's programming tips"
+  },
+  {
+    "id": "108",
+    "authorId": "3",
+    "postContent": "Charlie's latest finance advice"
+  },
+  {
+    "id": "109",
+    "authorId": "1",
+    "postContent": "Insha's latest AI research"
+  },
+  {
+    "id": "110",
+    "authorId": "4",
+    "postContent": "Diana on mindfulness"
+  }
+]
