@@ -11,6 +11,7 @@ public class Main {
     public static void main(String[] args) {
         ObjectMapper objectMapper = new ObjectMapper();
 
+        
         try {
             // Read person.json from resources
             InputStream personFile = Main.class.getClassLoader().getResourceAsStream("person.json");
