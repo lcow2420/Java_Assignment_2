@@ -1,46 +1,27 @@
 package com.insha.blog;
-
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.List;
-
 public class Main {
+
     public static void main(String[] args) {
-        ObjectMapper objectMapper = new ObjectMapper();
-
+        // Create valid BlogPost
         try {
-            // Read person.json and blogPosts.json from resources
-            InputStream personFile = Main.class.getClassLoader().getResourceAsStream("person.json");
-            InputStream blogPostsFile = Main.class.getClassLoader().getResourceAsStream("blogPosts.json");
+            BlogPost blogPost1 = new BlogPost("1", "author123", "This is a blog post content.");
+            System.out.println(blogPost1);
+        } catch (IllegalArgumentException e) {
+            System.out.println("Error creating BlogPost: " + e.getMessage());
+        }
 
-            if (personFile == null || blogPostsFile == null) {
-                System.err.println("Error: JSON files not found in the resources folder.");
-                return;
-            }
+        // Create invalid BlogPost with null ID
+        try {
+            BlogPost blogPost2 = new BlogPost(null, "author123", "This is another blog post content.");
+        } catch (IllegalArgumentException e) {
+            System.out.println("Error creating BlogPost: " + e.getMessage());
+        }
 
-            // Read JSON files into corresponding lists
-            List<Person> persons = objectMapper.readValue(personFile, new TypeReference<List<Person>>() {});
-            List<BlogPost> blogPosts = objectMapper.readValue(blogPostsFile, new TypeReference<List<BlogPost>>() {});
-
-            // Create Blog instance
-            Blog blog = new Blog(persons, blogPosts);
-
-            // Example: Get blog posts by authors of age 26
-            List<String> postsByAge = blog.getPostsByAuthorAge(26);
-            System.out.println("Blog posts by authors aged 26: " + postsByAge);
-
-            // Total number of blog posts
-            System.out.println("Total blog posts: " + blogPosts.size());
-
-            // Total number of unique contributors
-            long totalContributors = persons.stream().map(Person::getId).distinct().count();
-            System.out.println("Total contributors: " + totalContributors);
-
-        } catch (IOException e) {
-            System.err.println("Error reading JSON files: " + e.getMessage());
+        // Create invalid BlogPost with blank content
+        try {
+            BlogPost blogPost3 = new BlogPost("2", "author456", "   ");
+        } catch (IllegalArgumentException e) {
+            System.out.println("Error creating BlogPost: " + e.getMessage());
         }
     }
 }

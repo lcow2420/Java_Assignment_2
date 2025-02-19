@@ -3,7 +3,6 @@ import com.insha.blog.BlogPost;
 import static org.junit.jupiter.api.Assertions.*;
 public class BlogPostTest {
 
-    
     @Test
     public void testValidBlogPostCreation() {
         // Valid inputs
