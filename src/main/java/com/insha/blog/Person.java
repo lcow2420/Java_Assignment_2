@@ -14,6 +14,7 @@ import lombok.extern.jackson.Jacksonized;
 @Builder
 @JsonDeserialize // Add this annotation if necessary for your JSON deserialization
 public class Person {
+    
     private final String id;
     private final String firstName;
     private final String lastName;
