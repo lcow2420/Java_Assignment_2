@@ -1,6 +1,5 @@
 import static org.junit.jupiter.api.Assertions.*;
 import com.insha.blog.Person;
-
 import org.junit.jupiter.api.Test;
 
 public class PersonTest {
