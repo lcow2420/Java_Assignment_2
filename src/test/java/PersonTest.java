@@ -9,6 +9,7 @@ public class PersonTest {
         // Create a valid Person instance
         
         Person person = new Person("1", "John", "Doe", 30, "Male");
+        
 
         assertNotNull(person);
         assertEquals("John", person.getFirstName());
