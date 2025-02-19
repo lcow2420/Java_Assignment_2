@@ -1,10 +1,17 @@
 package com.insha.blog;
+
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.ToString;
+
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
-
+@EqualsAndHashCode
+@Getter
+@ToString
 public class Blog {
     private final List<Person> authors;
     private final List<BlogPost> posts;

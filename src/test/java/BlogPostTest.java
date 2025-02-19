@@ -1,7 +1,6 @@
 import org.junit.jupiter.api.Test;
 import com.insha.blog.BlogPost;
 import static org.junit.jupiter.api.Assertions.*;
-
 public class BlogPostTest {
 
     

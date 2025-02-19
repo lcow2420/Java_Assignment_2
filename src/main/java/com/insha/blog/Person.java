@@ -1,10 +1,10 @@
 package com.insha.blog;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
-
 import lombok.extern.jackson.Jacksonized;
 
 @Getter
@@ -12,6 +12,7 @@ import lombok.extern.jackson.Jacksonized;
 @EqualsAndHashCode
 @Jacksonized
 @Builder
+@JsonDeserialize // Add this annotation if necessary for your JSON deserialization
 public class Person {
     private final String id;
     private final String firstName;
