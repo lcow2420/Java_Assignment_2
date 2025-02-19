@@ -6,6 +6,7 @@ public class BlogPostTest {
     
     @Test
     public void testValidBlogPostCreation() {
+        
         // Valid inputs
         String id = "1";
         String authorId = "author123";
